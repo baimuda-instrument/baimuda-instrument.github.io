@@ -1,14 +1,57 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <script src="js/angular.js"></script>
-        <script src="js/app.js"></script>
-    </head>
-    <body>
-        this is {{8 + 3}}
-    </body>
+<html lang="en" ng-app="MyApp">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/fontawesome/css/all.css" />
+
+    <!-- angular官方 -->
+    <script src="js/lib/angular.js"></script>
+    <script src="js/lib/angular-route.min.js"></script>
+    <script src="js/lib/angular-ui-router.js"></script>
+    <!-- angular官方 end -->
+
+    <!-- 自己設定 -->
+    <script src="js/ng-module.js"></script>
+    <script src="js/route/route.config.js"></script>
+    <script src="js/route/product.route.config.js"></script>
+    <!-- 自己設定 end -->
+
+    <!-- 自己邏輯 -->
+    <script src="js/component/header.component.js"></script>
+    <script src="js/component/footer.component.js"></script>
+    <script src="js/component/index.component.js"></script>
+    <script src="js/component/contact.component.js"></script>
+    <script src="js/component/product.component.js"></script>
+    <script src="js/component/productDetail.component.js"></script>
+    <script src="js/component/productList.component.js"></script>
+    <script src="js/service/productService.service.js"></script>
+    <script src="js/component/fixContact.component.js"></script>
+
+    <!-- 產品元件 -->
+    <script src="js/component/product/centrifuge.component.js"></script>
+    <script src="js/component/product/stirrer.component.js"></script>
+    <script src="js/component/product/heating-plate.component.js"></script>
+    <script src="js/component/product/stirrer-accessory.component.js"></script>
+    <script src="js/component/product/vacummn-pump.component.js"></script>
+    <!-- 產品元件end -->
+
+    <!-- 自己邏輯end -->
+</head>
+
+<body>
+    <fix-contact></fix-contact>
+    <header-comp></header-comp>
+    <div class="main">
+        <ui-view name="main"></ui-view>
+    </div>
+    <footer-comp></footer-comp>
+</body>
+
 </html>

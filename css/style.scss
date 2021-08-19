@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-between;
+    ul {
+        margin: 0 1rem;
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        li {
+            margin: 0 1rem;
+        }
+        a {
+            font-size: 1.2rem;
+            text-decoration: none;
+            color: gray;
+        }
+    }
+}
+
+footer {
+    padding: 2rem 5rem 5em 5em;
+    color: white;
+    background: #4c4c4c;
+    div {
+        font-size: 1.2rem;
+        margin: 0.5rem;
+    }
+}
+
+fix-contact {
+    position: fixed;
+    right: 0;
+    // 為了固定在中間
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .fix-contact {
+        color: white;
+        background: green;
+        div {
+            height: 50px;
+            width: 50px;
+            &.addline {
+                border-top: solid 1px white;
+                border-bottom: solid 1px white;
+                a {
+                    font-size: 18px;
+                }
+            }
+            a {
+                height: 100%;
+                width: 100%;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                font-size: 26px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    fix-contact {
+        display: block;
+        font-size: 12px;
+        height: 50px;
+        width: 100%;
+        bottom: 0;
+        .fix-contact {
+            height: 100%;
+            display: flex;
+            text-align: center;
+            div {
+                &.addline {
+                    border-top: none;
+                    border-bottom: none;
+                    border-left: solid 2px white;
+                    border-right: solid 2px white;
+                }
+                flex-grow: 1;
+                a {
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+}
+
+.active-link {
+    border: solid 2px darkblue;
+}
+
+.main {
+    width: 1260px;
+    margin: 0 auto;
+    .product {
+        display: flex;
+        flex-wrap: wrap;
+        .productList {
+            max-width: 300px;
+            flex: 300px 1 1;
+            ul {
+                list-style: none;
+                padding: 0;
+                li {
+                    text-align: center;
+                    background: darkblue;
+                    border-radius: 20px;
+                    margin: 5px 0;
+                    display: flex;
+                    a {
+                        width: 100%;
+                        text-decoration: none;
+                        color: white;
+                        text-align: center;
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+        .productDetail {
+            flex: 300px 1 1;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
