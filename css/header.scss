@@ -1,0 +1,96 @@
+header {
+    min-height: 70px;
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-between;
+    background: rgb(26, 32, 44);
+    .logo {
+        padding: 1rem;
+        color: white;
+        display: flex;
+        align-items: center;
+    }
+    nav.pcnav {
+        ul {
+            margin: 0 1rem;
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            height: 100%;
+            li {
+                margin: 0 1rem;
+                display: flex;
+                align-items: center;
+            }
+            a {
+                font-size: 1.2rem;
+                text-decoration: none;
+                color: white;
+                border-radius: 8px;
+                padding: 8px 15px;
+                &.active-link {
+                    background: #2b6cb0;
+                }
+                &:hover {
+                    background: #2a4365;
+                }
+            }
+        }
+    }
+    nav.mnav {
+        display: none;
+        .toggler {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            ul {
+                margin-right: 10px;
+                li {
+                    a {
+                        color: white;
+                        cursor: pointer;
+                        i {
+                            border: 2px solid white;
+                            padding: 3px;
+                            border-radius: 3px;
+                        }
+                    }
+                }
+            }
+        }
+        .dropdown-container {
+            position: absolute;
+            top: 80px;
+            left: 0px;
+            width: 100%;
+            .dropdown {
+                background: white;
+                width: 80%;
+                margin: auto;
+                ul {
+                    li {
+                        text-align: center;
+                        // border-bottom: 2px gray solid;
+                        a {
+                            text-decoration: none;
+                            color: gray;
+                            font-size: 1.5rem;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:550px) {
+    header {
+        nav.pcnav {
+            display: none;
+        }
+        nav.mnav {
+            display: block;
+        }
+    }
+}

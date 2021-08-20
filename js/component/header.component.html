@@ -1,18 +1,50 @@
 <header>
-    <div class="logo">百慕達logo</div>
-    <nav>
+    <div class="logo"><span>百慕達</span><span class="PCpart">儀器</span></div>
+
+    <nav class="pcnav">
         <ul>
-            <li><a href="" ui-sref="index">首頁</a></li>
             <li>
-                <a href="" ui-sref="stirrer" ui-sref-active="active-link"
-                    >商品列表</a
-                >
+                <a href="" ui-sref="index" ui-sref-active="active-link">首頁</a>
             </li>
             <li>
+                <a href="" ui-sref="stirrer" ui-sref-active="active-link">商品列表</a
+                >
+            </li>
+            <!-- <li>
                 <a href="" ui-sref="contact" ui-sref-active="active-link"
                     >聯絡我們</a
                 >
+            </li> -->
+        </ul>
+    </nav>
+
+    <nav class="mnav">
+        <div class="toggler">
+            <ul>
+                <li>
+                    <a ng-click="vm.toggleDropdown()"
+                        ><i class="fa fa-bars"></i
+                    ></a>
             </li>
         </ul>
+        </div>
+        <div class="dropdown-container">
+            <div class="dropdown" ng-show="vm.openDropdown">
+                <ul>
+                    <li>
+                        <a href="" ui-sref="index" ng-click="vm.toggleDropdown()">首頁</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href=""
+                            ui-sref="stirrer"
+                            ng-click="vm.toggleDropdown()"
+                            >商品列表</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 </header>

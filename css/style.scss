@@ -4,26 +4,6 @@
     box-sizing: border-box;
 }
 
-header {
-    height: 10vh;
-    display: flex;
-    font-size: 2rem;
-    justify-content: space-between;
-    ul {
-        margin: 0 1rem;
-        list-style: none;
-        display: flex;
-        justify-content: flex-end;
-        li {
-            margin: 0 1rem;
-        }
-        a {
-            font-size: 1.2rem;
-            text-decoration: none;
-            color: gray;
-        }
-    }
-}
 
 footer {
     padding: 2rem 5rem 5em 5em;
