@@ -1,7 +1,8 @@
 <div>
     <ul>
         <li ng-repeat="product in vm.productData">
-            <a href="{{ product.url }}">{{ product.name }}</a>
+            <a href="{{ product.url }}">{{ product.name }}<br />{{ product.engName }}</a
+            >
         </li>
     </ul>
 </div>
