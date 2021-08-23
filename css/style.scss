@@ -94,6 +94,9 @@ fix-contact {
                     border-radius: 20px;
                     margin: 5px 0;
                     display: flex;
+                    &:hover {
+                        background: gray;
+                    }
                     a {
                         width: 100%;
                         text-decoration: none;
