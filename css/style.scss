@@ -89,12 +89,13 @@ fix-contact {
             max-width: 300px;
             flex: 300px 1 1;
             ul {
+                margin: 10px;
                 list-style: none;
                 padding: 0;
                 li {
                     text-align: center;
                     background: darkblue;
-                    border-radius: 20px;
+                    border-radius: 5px;
                     margin: 5px 0;
                     display: flex;
                     &:hover {
@@ -105,7 +106,7 @@ fix-contact {
                         text-decoration: none;
                         color: white;
                         text-align: center;
-                        padding: 1rem;
+                        padding: .2rem;
                     }
                 }
             }
