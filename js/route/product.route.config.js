@@ -16,17 +16,7 @@ angular.module('MyApp').config(function($stateProvider) {
         }
     });
 
-
-    $stateProvider.state({
-        name: 'centrifuge',
-        parent: 'product',
-        url: '/centrifuge',
-        views: {
-            'productDetail@product': {
-                component: 'centrifuge'
-            }
-        }
-    });
+    // 商品類
 
     $stateProvider.state({
         name: 'stirrer',
@@ -37,9 +27,16 @@ angular.module('MyApp').config(function($stateProvider) {
                 component: 'stirrer'
             }
         }
-    });
-
-    $stateProvider.state({
+    }).state({
+        name: 'centrifuge',
+        parent: 'product',
+        url: '/centrifuge',
+        views: {
+            'productDetail@product': {
+                component: 'centrifuge'
+            }
+        }
+    }).state({
         name: 'heating-plate',
         parent: 'product',
         url: '/heating-plate',
@@ -64,6 +61,60 @@ angular.module('MyApp').config(function($stateProvider) {
         views: {
             'productDetail@product': {
                 component: 'vacummnPump'
+            }
+        }
+    }).state({
+        name: 'stirrer_1',
+        parent: 'product',
+        url: '/stirrer_1',
+        views: {
+            'productDetail@product': {
+                component: 'stirrer1'
+            }
+        }
+    }).state({
+        name: 'stirrer_2',
+        parent: 'product',
+        url: '/stirrer_2',
+        views: {
+            'productDetail@product': {
+                component: 'stirrer2'
+            }
+        }
+    }).state({
+        name: 'stirrer_3',
+        parent: 'product',
+        url: '/stirrer_3',
+        views: {
+            'productDetail@product': {
+                component: 'stirrer3'
+            }
+        }
+    }).state({
+        name: 'stirrer_4',
+        parent: 'product',
+        url: '/stirrer_4',
+        views: {
+            'productDetail@product': {
+                component: 'stirrer4'
+            }
+        }
+    }).state({
+        name: 'stirrer_5',
+        parent: 'product',
+        url: '/stirrer_5',
+        views: {
+            'productDetail@product': {
+                component: 'stirrer5'
+            }
+        }
+    }).state({
+        name: 'stirrer_6',
+        parent: 'product',
+        url: '/stirrer_6',
+        views: {
+            'productDetail@product': {
+                component: 'stirrer6'
             }
         }
     });

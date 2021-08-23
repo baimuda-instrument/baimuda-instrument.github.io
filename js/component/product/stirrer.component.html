@@ -1,1 +1,5 @@
-<div><img src="img/product/數位式直流無刷攪拌機DIG系列.jpg" /></div>
+<div>
+    <div ng-repeat="stirrer in vm.stirrerData">
+        <a href="{{ stirrer.url }}">{{ stirrer.title }}</a>
+    </div>
+</div>
