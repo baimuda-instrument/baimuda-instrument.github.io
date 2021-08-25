@@ -124,4 +124,31 @@ fix-contact {
     .main {
         width: 100%;
     }
+
+.main {
+    .index {
+        width: 1260px;
+        position: relative;
+        z-index: -1;
+        img {
+            width: 100%;
+        }
+        .scroll-effect-cover {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transition: width .35s ease-in;
+            width: 100%;
+            background: white;
+            height: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:1260px) {
+    .main {
+        .index {
+            width: 100%;
+        }
+    }
 }
