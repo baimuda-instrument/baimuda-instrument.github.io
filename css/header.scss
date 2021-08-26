@@ -46,7 +46,7 @@ header {
             ul {
                 margin-right: 10px;
                 li {
-                    a {
+                    div {
                         color: white;
                         cursor: pointer;
                         i {
@@ -58,19 +58,26 @@ header {
                 }
             }
         }
-        .dropdown-container {
-            position: absolute;
-            top: 74px;
-            left: 0px;
-            width: 100%;
-            .dropdown {
-                background: white;
-                width: 80%;
-                margin: auto;
+        .myCollapse {
+            position: fixed;
+            background: white;
+            height: 100vh;
+            width: 100vw;
+            transition: right 0.3s ease;
+            right: -100%;
+            top: 0;
+            .dismiss {
+                display: flex;
+                justify-content: flex-end;
+                a {
+                    padding: 0.5rem
+                }
+            }
+            .nav {
                 ul {
                     li {
-                        text-align: center;
-                        // border-bottom: 2px gray solid;
+                        display: flex;
+                        justify-content: center;
                         a {
                             text-decoration: none;
                             color: gray;
@@ -81,6 +88,29 @@ header {
                 }
             }
         }
+        // .dropdown-container {
+        //     position: absolute;
+        //     top: 74px;
+        //     left: 0px;
+        //     width: 100%;
+        //     .dropdown {
+        //         background: white;
+        //         width: 80%;
+        //         margin: auto;
+        //         ul {
+        //             li {
+        //                 text-align: center;
+        //                 // border-bottom: 2px gray solid;
+        //                 a {
+        //                     text-decoration: none;
+        //                     color: gray;
+        //                     font-size: 1.5rem;
+        //                     font-weight: 600;
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
     }
 }
 

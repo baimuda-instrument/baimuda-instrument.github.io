@@ -22,13 +22,38 @@
         <div class="toggler">
             <ul>
                 <li>
-                    <a ng-click="vm.toggleDropdown()"
-                        ><i class="fa fa-bars"></i
-                    ></a>
-            </li>
-        </ul>
+                    <div ng-click="vm.toggleDropdown()">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                </li>
+            </ul>
         </div>
-        <div class="dropdown-container">
+
+        <div class="myCollapse">
+            <div class="dismiss">
+                <a ng-click="vm.toggleDropdown()">
+                    <i class="fas fa-times"></i>
+                </a>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <a href="" ui-sref="index" ng-click="vm.toggleDropdown()">首頁</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href=""
+                            ui-sref="stirrer"
+                            ng-click="vm.toggleDropdown()"
+                            >商品列表</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- <div class="dropdown-container">
             <div class="dropdown" ng-show="vm.openDropdown">
                 <ul>
                     <li>
@@ -45,6 +70,6 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div> -->
     </nav>
 </header>
