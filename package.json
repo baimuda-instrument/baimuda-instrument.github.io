@@ -12,5 +12,11 @@
     "angular": "1.8.x",
     "angular-route": "1.8.x",
     "bootstrap": "3.3.x"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-ng-annotate": "^2.1.0",
+    "gulp-uglify": "^3.0.2"
   }
 }
