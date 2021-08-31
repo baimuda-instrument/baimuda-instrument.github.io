@@ -23,6 +23,11 @@ angular.module('MyApp').service('ProductService', function() {
             name: '真空幫浦',
             engName: 'vacummn pump',
             url: '/#!/product/vacummn-pump'
+        },
+        {
+            name: '藥錠試驗器系列',
+            engName: 'tablet tester',
+            url: '/#!/product/tablet-tester'
         }
 
     ];

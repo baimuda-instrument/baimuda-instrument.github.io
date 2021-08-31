@@ -119,6 +119,26 @@ angular.module('MyApp').config(function($stateProvider) {
         }
     });
 
+    // 商品類 藥品測試器系列
+    $stateProvider.state({
+        name: 'tablet-tester',
+        parent: 'product',
+        url: '/tablet-tester',
+        views: {
+            'productDetail@product': {
+                component: 'tabletTester'
+            }
+        }
+    }).state({
+        name: 'tablet-hardness-tester',
+        parent: 'product',
+        url: '/tablet-hardness-tester',
+        views: {
+            'productDetail@product': {
+                component: 'tabletHardnessTester'
+            }
+        }
+    })
 
 
 
