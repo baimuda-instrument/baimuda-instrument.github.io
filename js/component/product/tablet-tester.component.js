@@ -8,9 +8,16 @@ angular.module('MyApp')
                 title: '硬度計',
                 url: '/#!product/tablet-hardness-tester',
                 imgSrc: 'img/product/硬度計縮圖.jpg'
+            }, {
+                title: '凝集試驗器',
+                url: '/#!product/JT',
+                imgSrc: 'img/product/BMD_JT-6S目錄.jpg'
             }]
         }
     })
     .component('tabletHardnessTester', { // 藥錠硬度計可能好幾款，之後可能再改
         template: '<div><img src="img/product/錠劑硬度計.jpg" /></div>'
+    })
+    .component('jt', { // 凝集試驗器 JT-6S ??
+        template: '<div><img src="img/product/BMD-凝集試驗器.jpg" /></div>'
     })

@@ -138,6 +138,15 @@ angular.module('MyApp').config(function($stateProvider) {
                 component: 'tabletHardnessTester'
             }
         }
+    }).state({
+        name: 'JT',
+        parent: 'product',
+        url: '/JT',
+        views: {
+            'productDetail@product': {
+                component: 'jt'
+            }
+        }
     })
 
 
