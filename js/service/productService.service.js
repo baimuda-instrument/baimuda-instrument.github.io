@@ -20,7 +20,7 @@ angular.module('MyApp').service('ProductService', function() {
             url: '/#!/product/tablet-tester'
         },
         {
-            name: '振盪 & 萃取& 混合器系列',
+            name: '振盪 & 萃取 & 混合器系列',
             engName: '',
             url: ''
         },
