@@ -1,4 +1,13 @@
-<div>
+<div class="productList-collapse">
+    <button ng-click="vm.toggle()">
+        <i
+            class="fas fa-caret-down"
+            ng-class="{ rotate180: vm.collapseList }"
+        ></i
+        >產品列表
+    </button>
+</div>
+<div ng-class="{ collapse: vm.collapseList }">
     <ul>
         <li ng-repeat="product in vm.productData">
             <a href="{{ product.url }}">{{ product.name }}<br />{{ product.engName }}</a

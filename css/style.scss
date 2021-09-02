@@ -98,29 +98,46 @@ fix-contact {
         .productList {
             max-width: 300px;
             flex: 300px 1 1;
-            ul {
+            .productList-collapse {
+                display: none;
                 margin: 10px;
-                list-style: none;
-                padding: 0;
-                li {
-                    text-align: center;
-                    background: darkblue;
-                    border-radius: 5px;
-                    margin: 5px 0;
-                    display: flex;
-                    &:hover {
-                        background: gray;
+                button {
+                    width: 100%;
+                    font-size: 1.5rem;
+                    i {
+                        transition: .3s linear;
+                        font-size: 2rem;
                     }
-                    a {
-                        flex: 1;
-                        text-decoration: none;
-                        color: white;
+                }
+            }
+            div {
+                transition: .3s linear;
+                overflow: hidden;
+                max-height: 100%;
+                ul {
+                    margin: 10px;
+                    list-style: none;
+                    padding: 0;
+                    li {
                         text-align: center;
-                        padding: .2rem;
-                        min-height: 3rem;
+                        background: darkblue;
+                        border-radius: 5px;
+                        margin: 5px 0;
                         display: flex;
-                        justify-content: center;
-                        align-items: center;
+                        &:hover {
+                            background: gray;
+                        }
+                        a {
+                            flex: 1;
+                            text-decoration: none;
+                            color: white;
+                            text-align: center;
+                            padding: .2rem;
+                            min-height: 3rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
                     }
                 }
             }
@@ -167,6 +184,14 @@ fix-contact {
 
 .card-shadow {
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.collapse {
+    max-height: 0px !important;
+}
+
+.rotate180 {
+    transform: rotate(180deg);
 }
 
 .download-container {
@@ -229,5 +254,11 @@ fix-contact {
         .index {
             width: 100%;
         }
+    }
+}
+
+@media screen and (max-width:550px) {
+    div.productList-collapse {
+        display: block !important;
     }
 }
