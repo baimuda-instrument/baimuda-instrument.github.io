@@ -2,7 +2,7 @@
     <div ng-repeat="stirrer in vm.stirrerData" class="catalog-item card-shadow">
         <a href="{{ stirrer.url }}">
             <div class="catalog-item-thumbnail">
-                <img src="{{ stirrer.imgSrc }}" />
+                <img ng-src="{{ stirrer.imgSrc }}" />
             </div>
             <div class="catalog-item-description">{{ stirrer.title }}</div>
         </a>

@@ -2,7 +2,7 @@
     <div ng-repeat="tabletTester in vm.tabletTesterData " class="catalog-item card-shadow">
         <a href="{{ tabletTester.url }}">
             <div class="catalog-item-thumbnail">
-                <img src="{{ tabletTester.imgSrc }}" />
+                <img ng-src="{{ tabletTester.imgSrc }}" />
             </div>
             <div class="catalog-item-description">{{ tabletTester.title }}</div>
         </a>
