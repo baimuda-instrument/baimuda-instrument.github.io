@@ -11,7 +11,7 @@ angular.module('MyApp')
             }, {
                 title: '凝集試驗器',
                 url: '/#!product/JT',
-                imgSrc: 'img/product/BMD_JT-6S目錄.jpg'
+                imgSrc: 'img/product/BMD_JT-6S縮圖.jpg'
             }]
         }
     })
