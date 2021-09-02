@@ -163,6 +163,19 @@ fix-contact {
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
+.download-container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    .download-btn {
+        background: green;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+}
+
 @media screen and (max-width:1260px) {
     .main {
         width: 100%;
