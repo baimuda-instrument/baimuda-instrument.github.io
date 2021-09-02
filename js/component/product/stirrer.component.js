@@ -6,22 +6,28 @@ angular.module('MyApp')
             var vm = this;
             vm.stirrerData = [{
                     title: '數位無刷攪拌機',
-                    url: '/#!product/stirrer_1'
+                    url: '/#!product/stirrer_1',
+                    imgSrc: 'img/product/BMD_數位無刷攪拌機縮圖.jpg'
                 }, {
                     title: '直流攪拌機',
-                    url: '/#!product/stirrer_2'
+                    url: '/#!product/stirrer_2',
+                    imgSrc: 'img/product/BMD直流攪拌機縮圖.jpg'
                 }, {
                     title: '電動攪拌機',
-                    url: '/#!product/stirrer_3'
+                    url: '/#!product/stirrer_3',
+                    imgSrc: 'img/product/BMD電動攪拌機縮圖.jpg'
                 }, {
-                    title: '數位高年度攪拌機',
-                    url: '/#!product/stirrer_4'
+                    title: '數位高黏度攪拌機',
+                    url: '/#!product/stirrer_4',
+                    imgSrc: 'img/product/BMD數位高黏度攪拌機縮圖.jpg'
                 }, {
                     title: '高速攪拌機',
-                    url: '/#!product/stirrer_5'
+                    url: '/#!product/stirrer_5',
+                    imgSrc: 'img/product/BMD高速攪拌機縮圖.jpg'
                 }, {
                     title: '落地式迷你型攪拌機',
-                    url: '/#!product/stirrer_6'
+                    url: '/#!product/stirrer_6',
+                    imgSrc: 'img/product/BMD落地式迷你型攪拌機縮圖.jpg'
                 },
 
             ]
