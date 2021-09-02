@@ -112,11 +112,15 @@ fix-contact {
                         background: gray;
                     }
                     a {
-                        width: 100%;
+                        flex: 1;
                         text-decoration: none;
                         color: white;
                         text-align: center;
                         padding: .2rem;
+                        min-height: 3rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                     }
                 }
             }
