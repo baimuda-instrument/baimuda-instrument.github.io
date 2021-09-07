@@ -18,6 +18,9 @@ angular.module('MyApp').service('ProductService', function() {
             name: '藥錠試驗器系列',
             engName: 'tablet tester',
             url: '/#!/product/tablet-tester'
+        }, {
+            name: '凝集試驗器',
+            url: '/#!/product/JT'
         },
         {
             name: '振盪 & 萃取 & 混合器系列',
