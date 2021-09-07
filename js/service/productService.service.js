@@ -28,7 +28,7 @@ angular.module('MyApp').service('ProductService', function() {
             url: ''
         },
         {
-            name: '電磁加熱攪拌器',
+            name: '磁性攪拌器',
             engName: '',
             url: ''
         },
