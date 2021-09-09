@@ -1,5 +1,8 @@
 <header>
-    <div class="logo"><span>百慕達</span><span class="PCpart">儀器</span></div>
+    <div class="logo">
+        <div>百慕達儀器</div>
+        <div class="eng">BMD INSTRUMENT</div>
+    </div>
 
     <nav class="pcnav">
         <ul>
@@ -7,14 +10,10 @@
                 <a href="" ui-sref="index" ui-sref-active="active-link">首頁</a>
             </li>
             <li>
-                <a href="" ui-sref="stirrer" ui-sref-active="active-link">商品列表</a
+                <a href="" ui-sref="stirrer" ui-sref-active="active-link"
+                    >商品列表</a
                 >
             </li>
-            <!-- <li>
-                <a href="" ui-sref="contact" ui-sref-active="active-link"
-                    >聯絡我們</a
-                >
-            </li> -->
         </ul>
     </nav>
 
@@ -34,11 +33,15 @@
                 <a ng-click="vm.toggleDropdown()">
                     <i class="fas fa-times"></i>
                 </a>
-                </div>
-                <div class="nav">
-                    <ul>
-                        <li>
-                            <a href="" ui-sref="index" ng-click="vm.toggleDropdown()">首頁</a
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a
+                            href=""
+                            ui-sref="index"
+                            ng-click="vm.toggleDropdown()"
+                            >首頁</a
                         >
                     </li>
                     <li>
@@ -52,24 +55,5 @@
                 </ul>
             </div>
         </div>
-
-        <!-- <div class="dropdown-container">
-            <div class="dropdown" ng-show="vm.openDropdown">
-                <ul>
-                    <li>
-                        <a href="" ui-sref="index" ng-click="vm.toggleDropdown()">首頁</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href=""
-                            ui-sref="stirrer"
-                            ng-click="vm.toggleDropdown()"
-                            >商品列表</a
-                        >
-                    </li>
-                </ul>
-            </div>
-        </div> -->
     </nav>
 </header>

@@ -5,10 +5,14 @@ header {
     justify-content: space-between;
     background: rgb(26, 32, 44);
     .logo {
-        padding: 1rem;
+        padding: 0.5rem 1rem;
         color: white;
         display: flex;
         align-items: center;
+        flex-direction: column;
+        .eng {
+            font-size: 1.2rem;
+        }
     }
     nav.pcnav {
         ul {
@@ -115,8 +119,15 @@ header {
     }
 }
 
-@media screen and (max-width:550px) {
+@media screen and (max-width: 550px) {
     header {
+        font-size: 1.5rem;
+        .logo {
+            .eng {
+                font-size: 1rem;
+            }
+        }
+
         nav.pcnav {
             display: none;
         }
