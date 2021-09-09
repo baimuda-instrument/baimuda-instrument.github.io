@@ -7,10 +7,14 @@
         >產品列表
     </button>
 </div>
-<div ng-class="{ collapse: vm.collapseList && vm.isMobile }">
+<div ng-class="{ collapse: vm.isMobile && vm.collapseList }">
     <ul>
-        <li ng-repeat="product in vm.productData" ng-click="vm.toggle()">
-            <a ng-href="{{ product.url }}">{{ product.name }}<br />{{ product.engName }}</a
+        <li
+            ng-repeat="product in vm.productData"
+            ng-click="vm.isMobile && vm.toggle()"
+        >
+            <a ng-href="{{ product.url }}"
+                >{{ product.name }}<br />{{ product.engName }}</a
             >
         </li>
     </ul>

@@ -1,16 +1,24 @@
 angular.module('MyApp').component('productList', {
     templateUrl: 'js/component/productList.component.html',
     controllerAs: 'vm',
-    controller: function(ProductService, DetectMobileService) {
+    controller: function(ProductService, DetectMobileService, $scope) {
         var vm = this;
-        vm.productData = ProductService.productData;
-        vm.isMobile = DetectMobileService.isMobile;
-
         vm.collapseList = false;
 
-        vm.toggle = function() {
-            vm.collapseList = !vm.collapseList;
+        vm.$onInit = function(){
+            vm.productData = ProductService.productData;
+            vm.isMobile = DetectMobileService.isMobile();
         }
+
+        $(window).resize(function(){
+            vm.isMobile = DetectMobileService.isMobile();
+            $scope.$digest();
+        })
+
+        vm.toggle = function() {
+            vm.collapseList = !vm.collapseList
+        }
+        
     }
 
 });
