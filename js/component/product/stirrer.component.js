@@ -34,7 +34,7 @@ angular.module('MyApp')
         }
     })
     .component('stirrer1', {
-        template: '<div><img src="img/product/數位式直流無刷攪拌機DIG系列.jpg" /></div>'
+        template: '<div><img src="img/product/BMD-數位式直流無刷攪拌機DIG系列.jpg" /></div>'
     })
     .component('stirrer2', {
         template: '<div><img src="img/product/直流攪拌器.jpg"></div>'
