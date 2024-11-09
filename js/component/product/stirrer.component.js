@@ -11,11 +11,11 @@ angular.module('MyApp')
                 }, {
                     title: '直流攪拌機',
                     url: '/#!product/stirrer_2',
-                    imgSrc: 'img/product/BMD直流攪拌機縮圖.jpg'
+                    imgSrc: 'img/product/BMD_DC整台縮圖.jpg'
                 }, {
                     title: '電動攪拌機',
                     url: '/#!product/stirrer_3',
-                    imgSrc: 'img/product/BMD電動攪拌機縮圖.jpg'
+                    imgSrc: 'img/product/BMD_G-TYPE縮圖.jpg'
                 }, {
                     title: '數位高黏度攪拌機',
                     url: '/#!product/stirrer_4',
@@ -33,21 +33,21 @@ angular.module('MyApp')
             ]
         }
     })
-    .component('stirrer1', {
+    .component('stirrer1', { // 數位無刷攪拌機
         template: '<div><img src="img/product/BMD-數位式直流無刷攪拌機DIG系列.jpg" /></div>'
     })
-    .component('stirrer2', {
-        template: '<div><img src="img/product/直流攪拌器.jpg"></div>'
+    .component('stirrer2', { // 直流攪拌機
+        template: '<div><img src="img/product/BMD-DC直流攪拌機.jpg"></div>'
     })
-    .component('stirrer3', {
-        template: '<div><img src="img/product/電動攪拌器.jpg"></div>'
+    .component('stirrer3', { // 電動攪拌機
+        template: '<div><img src="img/product/BMD-G系列攪拌機.jpg"></div>'
     })
-    .component('stirrer4', {
-        template: '<div><img src="img/product/高黏度攪拌機.jpg"></div>'
+    .component('stirrer4', { // 數位高黏度攪拌機
+        template: '<div><img src="img/product/BMD-High Torque Stirrer 高黏度攪拌機.jpg"></div>'
     })
-    .component('stirrer5', {
-        template: '<div><img src="img/product/高速攪拌器.jpg"></div>'
+    .component('stirrer5', { // 高速攪拌機
+        template: '<div><img src="img/product/高速攪拌機G-750 R.jpg"></div>'
     })
-    .component('stirrer6', {
+    .component('stirrer6', { // 落地式迷你型攪拌機
         template: '<div><img src="img/product/落地式攪拌機.jpg"></div>'
     })
