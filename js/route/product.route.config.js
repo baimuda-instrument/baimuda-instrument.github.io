@@ -37,9 +37,9 @@ angular.module('MyApp').config(function($stateProvider) {
             }
         }
     }).state({
-        name: 'heating-plate',
+        name: 'hot-plate',
         parent: 'product',
-        url: '/heating-plate',
+        url: '/hot-plate',
         views: {
             'productDetail@product': {
                 component: 'heatingPlate'

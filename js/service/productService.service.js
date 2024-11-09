@@ -11,8 +11,8 @@ angular.module('MyApp').service('ProductService', function() {
         },
         {
             name: '電氣加熱板',
-            engName: 'heating plate',
-            url: '/#!product/heating-plate'
+            engName: 'hot plate',
+            url: '/#!product/hot-plate'
         },
         {
             name: '藥錠試驗器系列',
