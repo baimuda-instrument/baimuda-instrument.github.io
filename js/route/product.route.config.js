@@ -138,7 +138,18 @@ angular.module('MyApp').config(function($stateProvider) {
                 component: 'tabletHardnessTester'
             }
         }
-    }).state({
+    })
+    .state({
+        name: 'disintegration-tester',
+        parent: 'product',
+        url: '/disintegration-tester',
+        views: {
+            'productDetail@product': {
+                component: 'disintegrationTester'
+            }
+        }
+    })
+    .state({
         name: 'JT',
         parent: 'product',
         url: '/JT',
