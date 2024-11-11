@@ -5,7 +5,7 @@ angular.module('MyApp')
         controller: function() {
             var vm = this;
             vm.tabletTesterData = [{
-                    title: '硬度計',
+                    title: '錠劑硬度計',
                     url: '/#!product/tablet-hardness-tester',
                     imgSrc: 'img/product/硬度計縮圖.jpg'
                 },
